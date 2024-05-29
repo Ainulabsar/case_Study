@@ -1,23 +1,22 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import NewProducts from './Components/newProducts';
+import Whatsnew from './Components/whatsnew';
+import LatestActivity from './Components/latestActivity';
+import ProectSummary from './Components/ProgressSummary';
+import SummaryWidjet from './Components/SummaryWidget';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NewProducts />
+      <div className="row-container">
+        <Whatsnew />
+        <LatestActivity />
+        <SummaryWidjet />
+      </div>
+      <ProectSummary />
     </div>
   );
 }
